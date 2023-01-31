@@ -83,6 +83,12 @@ p {
     margin-bottom: 2rem;
     color: hsl(217, 12%, 63%);
 }
+#error {
+    color: red;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 0.5rem;
+}
 .btn-primary {
     cursor: pointer;
     background-color: hsl(25, 97%, 53%);
