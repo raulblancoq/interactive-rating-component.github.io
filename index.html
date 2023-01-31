@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <div class="card-container">
+    <form action="" id="form">
+      <div class="circle">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please lest us know how we did with your support request. All Feedback is 
+        appreciated to help us improve our offering!
+      </p>
+      <div class="numbers">
+        <div class="circle number-rate">
+          <input type="radio" name="rate-option" id="circle-1" value="1" class="input-rate">
+          <label for="circle-1">1</label>
+        </div>
+        <div class="circle number-rate">
+          <input type="radio" name="rate-option" id="circle-2" value="2" class="input-rate">
+          <label for="circle-2">2</label>
+        </div>
+        <div class="circle number-rate">
+          <input type="radio" name="rate-option" id="circle-3" value="3" class="input-rate">
+          <label for="circle-3">3</label>
+        </div>
+        <div class="circle number-rate">
+          <input type="radio" name="rate-option" id="circle-4" value="4" class="input-rate">
+          <label for="circle-4">4</label>
+        </div>
+        <div class="circle number-rate">
+          <input type="radio" name="rate-option" id="circle-5" value="5" class="input-rate">
+          <label for="circle-5">5</label>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">submit</button>
+    </form>
+    <div class="hidden" id="thankYou">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <div class="rateValueDiv">
+        You selected <span id="rateValue"></span> out of 5
+      </div>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+         don't hesitate to get in touch!</p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
